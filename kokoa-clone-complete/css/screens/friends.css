@@ -1,0 +1,51 @@
+#friends-display__link {
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#friends-display__link i {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.friends-screen {
+  padding: 0 var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  padding-top: 15px;
+  border-top: var(--main-border);
+}
+
+.friends-screen__channel__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 130px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}

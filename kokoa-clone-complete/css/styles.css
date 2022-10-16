@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+  color: #2e363e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.welcome-header {
+  margin: 90px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+#login-form input {
+  border: 0;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form::placeholder {
+  opacity: rgba(0, 0, 0, 0.2);
+}
+
+#login-form input:focus {
+  border-color: var(--brown);
+  background-color: #ecf3fc;
+}
+
+#login-form input[type="submit"] {
+  border-radius: 5px;
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
+
+.main-screen {
+  padding: 0 var(--horizontal-space);
+}
